@@ -21,15 +21,13 @@
     "@vaadin/vaadin-material-styles": "24.5.5",
     "@vaadin/vaadin-themable-mixin": "24.5.5",
     "@vaadin/vaadin-usage-statistics": "2.1.3",
-    "autoprefixer": "^10.4.20",
     "construct-style-sheets-polyfill": "3.1.0",
     "date-fns": "2.29.3",
     "lit": "3.2.1",
-    "postcss": "^8.4.49",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "react-router-dom": "6.28.0",
-    "tailwindcss": "^3.4.16"
+    "react-markdown": "^9.0.1",
+    "react-router-dom": "6.28.0"
   },
   "devDependencies": {
     "@babel/preset-react": "7.26.3",
@@ -50,10 +48,13 @@
     "@vaadin/hilla-generator-utils": "24.5.8",
     "@vitejs/plugin-react": "4.3.3",
     "async": "3.2.6",
+    "autoprefixer": "^10.4.20",
     "glob": "10.4.5",
+    "postcss": "^8.4.49",
     "rollup-plugin-brotli": "3.1.0",
     "rollup-plugin-visualizer": "5.12.0",
     "strip-css-comments": "5.0.0",
+    "tailwindcss": "^3.4.16",
     "transform-ast": "2.4.4",
     "typescript": "5.6.3",
     "vite": "5.4.11",
@@ -120,7 +121,7 @@
       "workbox-core": "7.3.0",
       "workbox-precaching": "7.3.0"
     },
-    "hash": "f663281d5729a73de56ec6fa2355b6a3eb54072a8c1e09dc43ad942e5109751c"
+    "hash": "e1e77a36cedd9043bcdc8558c8f3ac72ab8ddbc29433ab1a93f0035984856862"
   },
   "overrides": {
     "@vaadin/bundles": "$@vaadin/bundles",
@@ -146,6 +147,9 @@
     "date-fns": "$date-fns",
     "@vaadin/vaadin-themable-mixin": "$@vaadin/vaadin-themable-mixin",
     "@vaadin/vaadin-lumo-styles": "$@vaadin/vaadin-lumo-styles",
-    "@vaadin/vaadin-material-styles": "$@vaadin/vaadin-material-styles"
+    "@vaadin/vaadin-material-styles": "$@vaadin/vaadin-material-styles",
+    "autoprefixer": "$autoprefixer",
+    "postcss": "$postcss",
+    "tailwindcss": "$tailwindcss"
   }
 }

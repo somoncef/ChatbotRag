@@ -1,8 +1,8 @@
-import '../styles/styles.css'
+import '../styles/tailwind.css';
 export default function Index(){
     return (
-        <div className="p-m">
-            <h1>home page</h1>
+        <div className="text-red-700">
+            <h1 className='text-2xl font-bold'>home page</h1>
         </div>
     );
 }
