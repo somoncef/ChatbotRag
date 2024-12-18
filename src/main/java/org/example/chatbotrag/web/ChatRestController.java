@@ -16,7 +16,7 @@ public class ChatRestController {
     @Autowired
     private ChatAiService chatAiService;
 
-    @GetMapping(value = "/ask",produces = MediaType.TEXT_MARKDOWN_VALUE)
+    @GetMapping(value = "/ask",produces = MediaType.TEXT_PLAIN_VALUE)
     public String Ask(String question){
         return chatAiService.ragChat(question);
     }
