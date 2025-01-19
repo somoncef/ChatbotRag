@@ -2,7 +2,6 @@ package org.example.chatbotrag.web;
 
 
 import org.example.chatbotrag.services.ChatAiService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,8 +12,12 @@ import javax.print.attribute.standard.Media;
 @RestController
 @RequestMapping("/chat")
 public class ChatRestController {
-    @Autowired
+
     private ChatAiService chatAiService;
+
+    public ChatRestController(ChatAiService chatAiService) {
+        this.chatAiService = chatAiService;
+    }
 
     @GetMapping(value = "/ask",produces = MediaType.TEXT_PLAIN_VALUE)
     public String Ask(String question){

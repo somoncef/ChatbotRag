@@ -20,8 +20,7 @@ public class RagDataLoader {
     @Value("classpath:/pdfs/cv_moncef_souri_ang_PFE.pdf")
     private Resource pdfResource;
 
-    @Value("store-data-v3.json")
-    private String storeFile;
+    private String storeFile = "store-data-v3.json";
 
     @Bean
     public SimpleVectorStore simpleVectorStore(EmbeddingModel emb){
@@ -44,6 +43,4 @@ public class RagDataLoader {
         }
         return vectorStore;
     }
-
-
 }
